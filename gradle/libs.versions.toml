@@ -45,6 +45,10 @@ coilTest = "2.7.0"
 javaClient = "9.4.0"
 javaClientVersion = "latest"
 material3Version = "1.4.0-alpha08"
+mockk = "1.13.16"
+truth = "1.4.4"
+kotlinxCoroutinesTest = "1.10.1"
+mockwebserver = "5.0.0-alpha.14"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -90,6 +94,10 @@ coil-test = { group = "io.coil-kt", name = "coil-test", version.ref = "coilTest"
 java-client = { group = "io.appium", name = "java-client", version.ref = "javaClient" }
 appium-java-client = { group = "com.github.appium", name = "java-client", version.ref = "javaClientVersion" }
 material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3Version" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

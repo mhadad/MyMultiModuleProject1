@@ -19,7 +19,7 @@ import javax.inject.Inject
 
 @Module
 @InstallIn(SingletonComponent::class)
-class RemoteProductsRepo @Inject constructor(private val remoteApiService: RemoteProductsDataSource, private val localDataSource: LocalProductsDataSource) {
+class RemoteProductsRepo @Inject constructor(private val remoteApiService: RemoteProductsDataSource, private val localDataSource: LocalProductsDataSource?) {
 //    private var _productsFlow : MutableStateFlow<ProductsDataModel?> = MutableStateFlow(value = null)
 //    val productsFlow : StateFlow<ProductsDataModel?> = _productsFlow
     suspend fun getAllProducts(limit: Int = 10): ProductsDataModel?{

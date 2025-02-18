@@ -31,7 +31,7 @@ class ProductsViewUseCase @Inject constructor(val remoteProductsRepo: RemoteProd
             }
         }
         catch (e: Throwable){
-            Log.e("Data", "${e.message}")
+//            Log.e("Data", "${e.message}")
 //            return flow {
 //                emit(DataRequestError(e.message.toString().orEmpty()))
 //            }
