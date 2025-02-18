@@ -41,7 +41,7 @@ fun SearchProductsScreen(modifier: Modifier) {
     LaunchedEffect(Unit){
         productsListScreenViewModel.getAllProducts(0)
     }
-    LaunchedEffect(execSearch){
+    LaunchedEffect(execSearchState){
         if(execSearchState.value == true) {
             productsListScreenViewModel.execSearch(searchQuery)
             execSearch = false
